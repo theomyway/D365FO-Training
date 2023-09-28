@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>FleetMgmntTutorial</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <DeployOnline>False</DeployOnline>
+    <ProjectGuid>{ccc17467-8af9-47bf-b0a3-c1dae2243e22}</ProjectGuid>
+    <Name>FMTDataModel</Name>
+    <RootNamespace>FMTDataModel</RootNamespace>
+    <StartupObject>DeviceIDGenJob</StartupObject>
+    <StartupType>Class</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>USMF</Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Base Enums\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Display Menu Item Extensions\" />
+    <Folder Include="Display Menu Items\" />
+    <Folder Include="EDT Dates\" />
+    <Folder Include="EDT Integer64s\" />
+    <Folder Include="EDT Strings\" />
+    <Folder Include="Form Extensions\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Output Menu Items\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Security Duties\" />
+    <Folder Include="Security Privileges\" />
+    <Folder Include="Security Roles\" />
+    <Folder Include="Simple Queries\" />
+    <Folder Include="Table Extensions\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\BatchJobCreationBatch">
+      <SubType>Content</SubType>
+      <Name>BatchJobCreationBatch</Name>
+      <Link>Classes\BatchJobCreationBatch</Link>
+    </Content>
+    <Content Include="AxClass\DeviceIDGenJob">
+      <SubType>Content</SubType>
+      <Name>DeviceIDGenJob</Name>
+      <Link>Classes\DeviceIDGenJob</Link>
+    </Content>
+    <Content Include="AxClass\DeviceIDNumberSequenceGenerator">
+      <SubType>Content</SubType>
+      <Name>DeviceIDNumberSequenceGenerator</Name>
+      <Link>Classes\DeviceIDNumberSequenceGenerator</Link>
+    </Content>
+    <Content Include="AxClass\DocAgreementDocumentContract">
+      <SubType>Content</SubType>
+      <Name>DocAgreementDocumentContract</Name>
+      <Link>Classes\DocAgreementDocumentContract</Link>
+    </Content>
+    <Content Include="AxClass\DocAgreementDocumentController">
+      <SubType>Content</SubType>
+      <Name>DocAgreementDocumentController</Name>
+      <Link>Classes\DocAgreementDocumentController</Link>
+    </Content>
+    <Content Include="AxClass\DocAgreementDocumentDP">
+      <SubType>Content</SubType>
+      <Name>DocAgreementDocumentDP</Name>
+      <Link>Classes\DocAgreementDocumentDP</Link>
+    </Content>
+    <Content Include="AxEdt\DevicePrice">
+      <SubType>Content</SubType>
+      <Name>DevicePrice</Name>
+      <Link>EDT Strings\DevicePrice</Link>
+    </Content>
+    <Content Include="AxEdt\FMTAddress">
+      <SubType>Content</SubType>
+      <Name>FMTAddress</Name>
+      <Link>EDT Strings\FMTAddress</Link>
+    </Content>
+    <Content Include="AxEdt\FMTCCExpiryDate">
+      <SubType>Content</SubType>
+      <Name>FMTCCExpiryDate</Name>
+      <Link>EDT Dates\FMTCCExpiryDate</Link>
+    </Content>
+    <Content Include="AxEdt\FMTChargeTypeId">
+      <SubType>Content</SubType>
+      <Name>FMTChargeTypeId</Name>
+      <Link>EDT Strings\FMTChargeTypeId</Link>
+    </Content>
+    <Content Include="AxEdt\FMTCreditCardNum">
+      <SubType>Content</SubType>
+      <Name>FMTCreditCardNum</Name>
+      <Link>EDT Strings\FMTCreditCardNum</Link>
+    </Content>
+    <Content Include="AxEdt\FMTCusDeviceID">
+      <SubType>Content</SubType>
+      <Name>FMTCusDeviceID</Name>
+      <Link>EDT Strings\FMTCusDeviceID</Link>
+    </Content>
+    <Content Include="AxEdt\FMTCUSIDD">
+      <SubType>Content</SubType>
+      <Name>FMTCUSIDD</Name>
+      <Link>EDT Strings\FMTCUSIDD</Link>
+    </Content>
+    <Content Include="AxEdt\FMTCustomerRecId">
+      <SubType>Content</SubType>
+      <Name>FMTCustomerRecId</Name>
+      <Link>EDT Integer64s\FMTCustomerRecId</Link>
+    </Content>
+    <Content Include="AxEdt\FMTDescription">
+      <SubType>Content</SubType>
+      <Name>FMTDescription</Name>
+      <Link>EDT Strings\FMTDescription</Link>
+    </Content>
+    <Content Include="AxEdt\FMTDeviceName">
+      <SubType>Content</SubType>
+      <Name>FMTDeviceName</Name>
+      <Link>EDT Strings\FMTDeviceName</Link>
+    </Content>
+    <Content Include="AxEdt\FMTDriversLicense">
+      <SubType>Content</SubType>
+      <Name>FMTDriversLicense</Name>
+      <Link>EDT Strings\FMTDriversLicense</Link>
+    </Content>
+    <Content Include="AxEdt\FMTName">
+      <SubType>Content</SubType>
+      <Name>FMTName</Name>
+      <Link>EDT Strings\FMTName</Link>
+    </Content>
+    <Content Include="AxEnum\BColor">
+      <SubType>Content</SubType>
+      <Name>BColor</Name>
+      <Link>Base Enums\BColor</Link>
+    </Content>
+    <Content Include="AxForm\CustomerInfoForm">
+      <SubType>Content</SubType>
+      <Name>CustomerInfoForm</Name>
+      <Link>Forms\CustomerInfoForm</Link>
+    </Content>
+    <Content Include="AxForm\DevicesForm">
+      <SubType>Content</SubType>
+      <Name>DevicesForm</Name>
+      <Link>Forms\DevicesForm</Link>
+    </Content>
+    <Content Include="AxForm\SimpleListAndDetailCustomerForm">
+      <SubType>Content</SubType>
+      <Name>SimpleListAndDetailCustomerForm</Name>
+      <Link>Forms\SimpleListAndDetailCustomerForm</Link>
+    </Content>
+    <Content Include="AxMenuExtension\AccountsPayable.FleetMgmntTutorial">
+      <SubType>Content</SubType>
+      <Name>AccountsPayable.FleetMgmntTutorial</Name>
+      <Link>Menu Extensions\AccountsPayable.FleetMgmntTutorial</Link>
+    </Content>
+    <Content Include="AxMenuExtension\AccountsReceivable.FleetMgmntTutorial">
+      <SubType>Content</SubType>
+      <Name>AccountsReceivable.FleetMgmntTutorial</Name>
+      <Link>Menu Extensions\AccountsReceivable.FleetMgmntTutorial</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplayExtension\VendGroup.FleetMgmntTutorial">
+      <SubType>Content</SubType>
+      <Name>VendGroup.FleetMgmntTutorial</Name>
+      <Link>Display Menu Item Extensions\VendGroup.FleetMgmntTutorial</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\DeviceDisplayForm">
+      <SubType>Content</SubType>
+      <Name>DeviceDisplayForm</Name>
+      <Link>Display Menu Items\DeviceDisplayForm</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\DisplayCustomersInfo">
+      <SubType>Content</SubType>
+      <Name>DisplayCustomersInfo</Name>
+      <Link>Display Menu Items\DisplayCustomersInfo</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\SimpleListAndDetailCustomerForm2">
+      <SubType>Content</SubType>
+      <Name>SimpleListAndDetailCustomerForm2</Name>
+      <Link>Display Menu Items\SimpleListAndDetailCustomerForm2</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\CustomerDeviceInfoDisplay">
+      <SubType>Content</SubType>
+      <Name>CustomerDeviceInfoDisplay</Name>
+      <Link>Output Menu Items\CustomerDeviceInfoDisplay</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\DocAgreementDocumentPreview">
+      <SubType>Content</SubType>
+      <Name>DocAgreementDocumentPreview</Name>
+      <Link>Output Menu Items\DocAgreementDocumentPreview</Link>
+    </Content>
+    <Content Include="AxQuery\DeviceInfoQuery">
+      <SubType>Content</SubType>
+      <Name>DeviceInfoQuery</Name>
+      <Link>Simple Queries\DeviceInfoQuery</Link>
+    </Content>
+    <Content Include="AxReport\CusDeviceReport">
+      <SubType>Content</SubType>
+      <Name>CusDeviceReport</Name>
+      <Link>Reports\CusDeviceReport</Link>
+    </Content>
+    <Content Include="AxReport\DocAgreementDocument">
+      <SubType>Content</SubType>
+      <Name>DocAgreementDocument</Name>
+      <Link>Reports\DocAgreementDocument</Link>
+    </Content>
+    <Content Include="AxSecurityDuty\CusAndDeviceInfoSecurityDuty">
+      <SubType>Content</SubType>
+      <Name>CusAndDeviceInfoSecurityDuty</Name>
+      <Link>Security Duties\CusAndDeviceInfoSecurityDuty</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\CustomerInfoAndDeviceInfoView">
+      <SubType>Content</SubType>
+      <Name>CustomerInfoAndDeviceInfoView</Name>
+      <Link>Security Privileges\CustomerInfoAndDeviceInfoView</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\CustomerInfoMaintain">
+      <SubType>Content</SubType>
+      <Name>CustomerInfoMaintain</Name>
+      <Link>Security Privileges\CustomerInfoMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityRole\CusAndDeviceInfoDutyRole">
+      <SubType>Content</SubType>
+      <Name>CusAndDeviceInfoDutyRole</Name>
+      <Link>Security Roles\CusAndDeviceInfoDutyRole</Link>
+    </Content>
+    <Content Include="AxTableExtension\VendTable.FleetMgmntTutorial">
+      <SubType>Content</SubType>
+      <Name>VendTable.FleetMgmntTutorial</Name>
+      <Link>Table Extensions\VendTable.FleetMgmntTutorial</Link>
+    </Content>
+    <Content Include="AxTable\DocAgreementContact">
+      <SubType>Content</SubType>
+      <Name>DocAgreementContact</Name>
+      <Link>Tables\DocAgreementContact</Link>
+    </Content>
+    <Content Include="AxTable\DocAgreementHeader">
+      <SubType>Content</SubType>
+      <Name>DocAgreementHeader</Name>
+      <Link>Tables\DocAgreementHeader</Link>
+    </Content>
+    <Content Include="AxTable\DocAgreementLine">
+      <SubType>Content</SubType>
+      <Name>DocAgreementLine</Name>
+      <Link>Tables\DocAgreementLine</Link>
+    </Content>
+    <Content Include="AxTable\FMTCustomer">
+      <SubType>Content</SubType>
+      <Name>FMTCustomer</Name>
+      <Link>Tables\FMTCustomer</Link>
+    </Content>
+    <Content Include="AxTable\FMTCustomerDevices">
+      <SubType>Content</SubType>
+      <Name>FMTCustomerDevices</Name>
+      <Link>Tables\FMTCustomerDevices</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
