@@ -35,6 +35,7 @@
   <ItemGroup>
     <Folder Include="Base Enums\" />
     <Folder Include="Classes\" />
+    <Folder Include="Data Entities\" />
     <Folder Include="Display Menu Item Extensions\" />
     <Folder Include="Display Menu Items\" />
     <Folder Include="EDT Dates\" />
@@ -82,6 +83,11 @@
       <SubType>Content</SubType>
       <Name>DocAgreementDocumentDP</Name>
       <Link>Classes\DocAgreementDocumentDP</Link>
+    </Content>
+    <Content Include="AxDataEntityView\FMTCusDataEntity">
+      <SubType>Content</SubType>
+      <Name>FMTCusDataEntity</Name>
+      <Link>Data Entities\FMTCusDataEntity</Link>
     </Content>
     <Content Include="AxEdt\DevicePrice">
       <SubType>Content</SubType>
@@ -233,6 +239,16 @@
       <Name>CustomerInfoMaintain</Name>
       <Link>Security Privileges\CustomerInfoMaintain</Link>
     </Content>
+    <Content Include="AxSecurityPrivilege\FMTCusDataEntityMaintain">
+      <SubType>Content</SubType>
+      <Name>FMTCusDataEntityMaintain</Name>
+      <Link>Security Privileges\FMTCusDataEntityMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\FMTCusDataEntityView">
+      <SubType>Content</SubType>
+      <Name>FMTCusDataEntityView</Name>
+      <Link>Security Privileges\FMTCusDataEntityView</Link>
+    </Content>
     <Content Include="AxSecurityRole\CusAndDeviceInfoDutyRole">
       <SubType>Content</SubType>
       <Name>CusAndDeviceInfoDutyRole</Name>
@@ -257,6 +273,11 @@
       <SubType>Content</SubType>
       <Name>DocAgreementLine</Name>
       <Link>Tables\DocAgreementLine</Link>
+    </Content>
+    <Content Include="AxTable\FMTCusDataStaging">
+      <SubType>Content</SubType>
+      <Name>FMTCusDataStaging</Name>
+      <Link>Tables\FMTCusDataStaging</Link>
     </Content>
     <Content Include="AxTable\FMTCustomer">
       <SubType>Content</SubType>
