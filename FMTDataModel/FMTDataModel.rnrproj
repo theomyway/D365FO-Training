@@ -36,11 +36,13 @@
     <Folder Include="Base Enums\" />
     <Folder Include="Classes\" />
     <Folder Include="Data Entities\" />
+    <Folder Include="Data Entity Extensions\" />
     <Folder Include="Display Menu Item Extensions\" />
     <Folder Include="Display Menu Items\" />
     <Folder Include="EDT Dates\" />
     <Folder Include="EDT Integer64s\" />
     <Folder Include="EDT Strings\" />
+    <Folder Include="Extended Data Types\" />
     <Folder Include="Form Extensions\" />
     <Folder Include="Forms\" />
     <Folder Include="Menu Extensions\" />
@@ -84,10 +86,20 @@
       <Name>DocAgreementDocumentDP</Name>
       <Link>Classes\DocAgreementDocumentDP</Link>
     </Content>
+    <Content Include="AxDataEntityViewExtension\CustCustomerV3Entity.FleetMgmntTutorial">
+      <SubType>Content</SubType>
+      <Name>CustCustomerV3Entity.FleetMgmntTutorial</Name>
+      <Link>Data Entity Extensions\CustCustomerV3Entity.FleetMgmntTutorial</Link>
+    </Content>
     <Content Include="AxDataEntityView\FMTCusDataEntity">
       <SubType>Content</SubType>
       <Name>FMTCusDataEntity</Name>
       <Link>Data Entities\FMTCusDataEntity</Link>
+    </Content>
+    <Content Include="AxEdt\CustAccountCopy">
+      <SubType>Content</SubType>
+      <Name>CustAccountCopy</Name>
+      <Link>Extended Data Types\CustAccountCopy</Link>
     </Content>
     <Content Include="AxEdt\DevicePrice">
       <SubType>Content</SubType>
@@ -254,6 +266,11 @@
       <Name>CusAndDeviceInfoDutyRole</Name>
       <Link>Security Roles\CusAndDeviceInfoDutyRole</Link>
     </Content>
+    <Content Include="AxTableExtension\CustTable.FleetMgmntTutorial">
+      <SubType>Content</SubType>
+      <Name>CustTable.FleetMgmntTutorial</Name>
+      <Link>Table Extensions\CustTable.FleetMgmntTutorial</Link>
+    </Content>
     <Content Include="AxTableExtension\VendTable.FleetMgmntTutorial">
       <SubType>Content</SubType>
       <Name>VendTable.FleetMgmntTutorial</Name>
@@ -288,6 +305,11 @@
       <SubType>Content</SubType>
       <Name>FMTCustomerDevices</Name>
       <Link>Tables\FMTCustomerDevices</Link>
+    </Content>
+    <Content Include="AxTable\ItemsPurchasedCustTable">
+      <SubType>Content</SubType>
+      <Name>ItemsPurchasedCustTable</Name>
+      <Link>Tables\ItemsPurchasedCustTable</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
