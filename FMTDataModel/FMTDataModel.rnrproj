@@ -166,6 +166,11 @@
       <Name>BColor</Name>
       <Link>Base Enums\BColor</Link>
     </Content>
+    <Content Include="AxFormExtension\CustTable.FleetMgmntTutorial">
+      <SubType>Content</SubType>
+      <Name>CustTable.FleetMgmntTutorial</Name>
+      <Link>Form Extensions\CustTable.FleetMgmntTutorial</Link>
+    </Content>
     <Content Include="AxForm\CustomerInfoForm">
       <SubType>Content</SubType>
       <Name>CustomerInfoForm</Name>
@@ -265,6 +270,11 @@
       <SubType>Content</SubType>
       <Name>CusAndDeviceInfoDutyRole</Name>
       <Link>Security Roles\CusAndDeviceInfoDutyRole</Link>
+    </Content>
+    <Content Include="AxTableExtension\CustCustomerV3Staging.FleetMgmntTutorial">
+      <SubType>Content</SubType>
+      <Name>CustCustomerV3Staging.FleetMgmntTutorial</Name>
+      <Link>Table Extensions\CustCustomerV3Staging.FleetMgmntTutorial</Link>
     </Content>
     <Content Include="AxTableExtension\CustTable.FleetMgmntTutorial">
       <SubType>Content</SubType>
